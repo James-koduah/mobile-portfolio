@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Navigation section - always at the bottom -->
+    <div id="nav">
+        <button id="nav_about" onclick="change_Page('about')">About</button>
+        <button id="nav_home" onclick="change_Page('home')">Home</button>
+        <button id="nav_projects" onclick="change_Page('projects')">Projects</button>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home">
+        <h1>JAMES KODUAH</h1>
+        <h1>Software <span style="background-color: black;padding: 2vw;">Developer</span></h1>
+        <div id="contact">
+            <h3>CONTACT ME</h3>
+        </div>
+    
+    </div>
+
+    <!-- About section -->
+    <div id="about"></div>
+
+    <!-- Projects Page-->
+    <div id="projects">
+        <div id="keyboard" class="pro_tiles"></div>
+        <div id="quotes" class="pro_tiles"></div>
+        <div id="calculator" class="pro_tiles"></div>
+        <div id="drum_machine" class="pro_tiles"></div>
+        <div id="rockpaperscissors" class="pro_tiles"></div>
+        <div class="pro_tiles"></div>
+        <div class="pro_tiles"></div>
+        <div class="pro_tiles"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

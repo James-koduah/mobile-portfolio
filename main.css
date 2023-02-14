@@ -1,0 +1,149 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+/* h1 {
+    background: linear-gradient(
+      90deg,
+      rgba(249, 211, 180, 1) 0%,
+      rgba(249, 211, 180, 0.3) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
+  /* Home page */
+  #home{
+    position: absolute;
+    background: url(images/welcome2.jpg);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1vw;
+    padding-top: 5vh;
+  }
+
+  #home h1{
+    font-size: 7vw;
+    font-weight: 800;
+    color: white;
+  }
+
+
+  #contact{
+    width: 80vw;
+    height: 60vh;
+    background-color: rgb(240, 248, 255);
+    color: black;
+    opacity: 0.3;
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 5vw;
+  }
+
+
+  #nav{
+    position: fixed;
+    width: 97vw;
+    height: 6vh;
+    position: fixed;
+    top: 93vh;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 1.5vw;
+    justify-content:space-evenly;
+  }
+
+  #nav button{
+    background-color: #930202;
+    color: aliceblue;
+    min-height: 60%;
+    min-width: 20vw;
+    max-width: 150px;
+    border: 0.4vw solid white;
+    border-radius: 5vw;
+    font-weight: 700;
+  }
+
+
+  
+  #nav button:hover{
+    color: white;
+    transform: scale(1.3);
+    transition: .5s;
+  }
+
+/* Home page */
+
+
+/* About Section */
+  #about{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+  }
+
+
+
+  /* Projects */
+  #projects{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  .pro_tiles{
+    position: relative;
+    width: 80vw;
+    max-width: 400px;
+    height: 20vh;
+    background-color: rgb(2, 2, 71);
+    border-style: solid;
+    border-radius: 2vw;
+    border-width: .1vw;
+    margin: auto;
+    margin-bottom: 2vh;
+
+  }
+
+  #keyboard{
+    background: url(images/keyboard3.JPG);
+    background-size: 100% 100%;
+  }
+
+  #quotes{
+    background: url(images/quotes3.JPG);
+    background-size: 100% 100%;
+  }
+
+  #calculator{
+    background: url(images/calcualtor.PNG);
+    background-size: 100% 100%;
+  }
+
+  #drum_machine{
+    background: url(images/drum\ machine.PNG);
+    background-size: 100% 100%;
+  }
+
+  #rockpaperscissors{
+    background: url(images/rockpapersicssors.JPG);
+    background-size: 100% 100%;
+  }
