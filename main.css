@@ -1,11 +1,12 @@
-*{
+/* *{
     padding: 0px;
     margin: 0px;
-}
+} */
 body{
     background-color: black;
     color: white;
-    
+    height: 100vh;
+    overflow-y: hidden;
 }
 /* h1 {
     background: linear-gradient(
@@ -24,14 +25,12 @@ body{
     background: url(images/welcome2.jpg);
     background-size: 100% 100%;
     width: 100vw;
-    height: 100vh;
+    height: 97vh;
     z-index: 10;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
-    gap: 1vw;
-    padding-top: 5vh;
   }
 
   #home h1{
@@ -57,12 +56,11 @@ body{
     width: 97vw;
     height: 6vh;
     position: fixed;
-    top: 93vh;
+    top: 95vh;
     background-color: black;
     z-index: 100;
     display: flex;
     align-items: center;
-    padding: 1.5vw;
     justify-content:space-evenly;
   }
 
@@ -106,20 +104,19 @@ body{
     width: 100vw;
     height: 100vh;
     overflow-y: scroll;
+    margin: 0px;
+    padding: 0px;
   }
 
   .pro_tiles{
-    position: relative;
-    width: 80vw;
-    max-width: 400px;
+    min-width: 80vw;
+    max-width: 500px;
     height: 20vh;
     background-color: rgb(2, 2, 71);
     border-style: solid;
     border-radius: 2vw;
     border-width: .1vw;
     margin: auto;
-    margin-bottom: 2vh;
-
   }
 
   #keyboard{
@@ -145,4 +142,4 @@ body{
   #rockpaperscissors{
     background: url(images/rockpapersicssors.JPG);
     background-size: 100% 100%;
-  }
+  } 
