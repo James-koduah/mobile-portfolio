@@ -1,7 +1,7 @@
-/* *{
+*{
     padding: 0px;
     margin: 0px;
-} */
+}
 body{
     background-color: black;
     color: white;
@@ -22,10 +22,9 @@ body{
   /* Home page */
   #home{
     position: absolute;
-    background: url(images/welcome2.jpg);
-    background-size: 100% 100%;
+    background: black;
     width: 100vw;
-    height: 97vh;
+    height: 100vh;
     z-index: 10;
     display: flex;
     align-items: center;
@@ -39,29 +38,53 @@ body{
     color: white;
   }
 
+  #home button{
+    width: 50vw;
+    height: 8vh;
+    font-size: 6vw;
+    margin-top: 30vh;
+    border-radius: 2vw;
+    background-color: salmon;
+  }
+
 
   #contact{
     width: 80vw;
     height: 60vh;
-    background-color: rgb(240, 248, 255);
+    background-color:rgb(255,255,255, 0.1);
     color: black;
-    opacity: 0.3;
     text-align: center;
     font-size: 5vw;
+    margin: 10vh;
   }
 
-
-  #nav{
+  #menu{
     position: fixed;
-    width: 97vw;
+    width: 100vw;
     height: 6vh;
     position: fixed;
-    top: 95vh;
-    background-color: black;
-    z-index: 100;
+    top: 0vh;
+    background-color: rgb(66, 62, 62);
+    z-index: 15;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    transition: 0.3s;
+    font-size: 5vw;
+  }
+
+  #nav{
+    position: fixed;
+    width: 100vw;
+    height: 6vh;
+    position: fixed;
+    top: 0vh;
+    background-color: black;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    transition: 0.3s;
   }
 
   #nav button{
@@ -73,6 +96,17 @@ body{
     border: 0.4vw solid white;
     border-radius: 5vw;
     font-weight: 700;
+    font-size: 3vw;
+  }
+
+  #nav_drop{
+    width: 7vw;
+    height: 6vh;
+    position: fixed;
+    top: 0vh;
+    left: 93vw;
+    background-color: aliceblue;
+    z-index: 20;
   }
 
 
@@ -111,12 +145,13 @@ body{
   .pro_tiles{
     min-width: 80vw;
     max-width: 500px;
-    height: 20vh;
+    height: 30vh;
     background-color: rgb(2, 2, 71);
     border-style: solid;
     border-radius: 2vw;
     border-width: .1vw;
     margin: auto;
+    margin-top: 5vh;
   }
 
   #keyboard{

@@ -1,6 +1,7 @@
 let home = document.getElementById("home")
 let about = document.getElementById("about")
 let project = document.getElementById("projects")
+let nav = document.getElementById("nav")
 
 current = home
 function change_Page(page){
@@ -22,4 +23,18 @@ function change_Page(page){
         current = project
         return;
     }
+}
+
+let b = false
+function nav_drop(){
+    if (b == false)
+    {
+        nav.style.zIndex = "19";
+        b = true 
+    }
+    else{
+        nav.style.zIndex = "0";
+        b = false
+    }
+       
 }
