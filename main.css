@@ -22,29 +22,48 @@ body{
   /* Home page */
   #home{
     position: absolute;
-    background: black;
+    background: url(images/3.png);
+    background-size: 100% 100%;
     width: 100vw;
     height: 100vh;
     z-index: 10;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
 
+  #home p{
+    font-size: 6vw;
+    margin: 10vh;
+
+  }
+  /* #cover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  } */
   #home h1{
     font-size: 7vw;
     font-weight: 800;
     color: white;
   }
 
+
   #home button{
     width: 50vw;
     height: 8vh;
     font-size: 6vw;
-    margin-top: 30vh;
+    margin-top: 15vh;
     border-radius: 2vw;
     background-color: rgb(3, 3, 69);
+    color: aliceblue;
   }
   #home button:first-of-type{
     background-color: rgb(244, 80, 62);
