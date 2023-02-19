@@ -44,8 +44,12 @@ body{
     font-size: 6vw;
     margin-top: 30vh;
     border-radius: 2vw;
-    background-color: salmon;
+    background-color: rgb(3, 3, 69);
   }
+  #home button:first-of-type{
+    background-color: rgb(244, 80, 62);
+  }
+  
 
 
   #contact{
@@ -61,7 +65,7 @@ body{
   #menu{
     position: fixed;
     width: 100vw;
-    height: 6vh;
+    height: 8vh;
     position: fixed;
     top: 0vh;
     background-color: rgb(66, 62, 62);
@@ -75,33 +79,35 @@ body{
 
   #nav{
     position: fixed;
-    width: 100vw;
-    height: 6vh;
+    width: 20vw;
+    height: 20vh;
     position: fixed;
-    top: 0vh;
-    background-color: black;
+    top: 8vh;
+    right: 0vw;
     z-index: 0;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    transition: 0.3s;
+    flex-direction: column;
+    transition: ease-in-out;
+    animation-duration: 0.2s;
   }
 
   #nav button{
     background-color: #930202;
     color: aliceblue;
-    min-height: 60%;
+    min-height: 30%;
     min-width: 20vw;
     max-width: 150px;
     border: 0.4vw solid white;
-    border-radius: 5vw;
+    border-radius: 2vw;
     font-weight: 700;
     font-size: 3vw;
   }
 
   #nav_drop{
     width: 7vw;
-    height: 6vh;
+    height: 8vh;
     position: fixed;
     top: 0vh;
     left: 93vw;
