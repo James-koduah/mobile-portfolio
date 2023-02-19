@@ -106,12 +106,14 @@ body{
   }
 
   #nav_drop{
-    width: 7vw;
-    height: 8vh;
+    width: 6vh;
+    height: 7vh;
     position: fixed;
-    top: 0vh;
-    left: 93vw;
-    background-color: aliceblue;
+    top: 1vw;
+    left: 86vw;
+    background: url(images/iconmonstr-text-23-240.png);
+    background-size: 100% 100%;
+    color: white;
     z-index: 20;
   }
 
