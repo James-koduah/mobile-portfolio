@@ -151,9 +151,15 @@ body{
   #about{
     position: absolute;
     background-color: black;
+    color: white;
     width: 100vw;
     height: 100vh;
+    text-align: center;
     z-index: 9;
+  }
+  #about h1{
+    margin-top: 50vh;
+    font-size: 4vw;
   }
 
 
@@ -187,7 +193,7 @@ body{
   }
 
   #quotes{
-    background: url(images/quotes3.JPG);
+    background: url(images/quotes2.JPG);
     background-size: 100% 100%;
   }
 
