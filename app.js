@@ -5,6 +5,12 @@ let nav = document.getElementById("nav")
 let div_clear = document.getElementById("div_clear")
 let nav_drop_button = document.getElementById("nav_drop")
 current = home
+
+if (screen.width > 400)
+  {
+  window.location = "https://james-koduah.github.io/Personal-Portfolio/";
+  }
+
 function change_Page(page){
     if (page == "about"){
         current.style.zIndex = 2

@@ -22,16 +22,17 @@ body{
   /* Home page */
   #home{
     position: absolute;
-    background: url(images/3.jpg);
+    background: url(images/test2.jpg);
     background-size: 100% 100%;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     z-index: 10;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-y: scroll;
   }
 
   #home p{
@@ -132,7 +133,7 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
   }
 
