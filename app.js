@@ -7,10 +7,10 @@ let nav_drop_button = document.getElementById("nav_drop")
 let hack = document.getElementById("hacker")
 current = home
 
-// if (screen.width > 500)
-//   {
-//   window.location = "https://james-koduah.github.io/Personal-Portfolio/";
-//   }
+if (screen.width > 500)
+  {
+  window.location = "https://james-koduah.github.io/Personal-Portfolio/";
+  }
 
 function change_Page(page){
     if (page == "about"){
@@ -68,5 +68,5 @@ text_interval = setInterval(()=>{
     
     .join("");
 
-    textIterations += 1/4
+    textIterations += 1/10
 },30);
