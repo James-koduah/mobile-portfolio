@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: "Space Mono", monospace;
 }
 body{
     background-color: black;
@@ -37,7 +38,6 @@ body{
 
   #home p{
     font-size: 5vw;
-    margin: 10vh;
 
   }
  
@@ -45,6 +45,7 @@ body{
     font-size: 5vw;
     font-weight: 800;
     color: white;
+    margin-top: 13vh;
   }
 
 
@@ -52,7 +53,7 @@ body{
     width: 40vw;
     height: 6vh;
     font-size: 4vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
     border-radius: 2px;
     border: black solid 1px;
     background-color: rgb(3, 3, 69);

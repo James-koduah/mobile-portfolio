@@ -4,12 +4,13 @@ let project = document.getElementById("projects")
 let nav = document.getElementById("nav")
 let div_clear = document.getElementById("div_clear")
 let nav_drop_button = document.getElementById("nav_drop")
+let hack = document.getElementById("hacker")
 current = home
 
-if (screen.width > 400)
-  {
-  window.location = "https://james-koduah.github.io/Personal-Portfolio/";
-  }
+// if (screen.width > 500)
+//   {
+//   window.location = "https://james-koduah.github.io/Personal-Portfolio/";
+//   }
 
 function change_Page(page){
     if (page == "about"){
@@ -51,3 +52,21 @@ function nav_drop(){
     }
        
 }
+
+let textIterations = 0;
+let original_word = "SOFTWARE DEVELOPER"
+text_interval = setInterval(()=>{
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    hack.innerText = hack.innerText.split("")
+    .map((letter, index) => {
+
+        if (index < textIterations){
+            return original_word[index];
+        }
+        return letters[Math.floor(Math.random() * 26)]
+    })
+    
+    .join("");
+
+    textIterations += 1/4
+},30);
