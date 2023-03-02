@@ -4,31 +4,33 @@ let project = document.getElementById("projects")
 let nav = document.getElementById("nav")
 let div_clear = document.getElementById("div_clear")
 let nav_drop_button = document.getElementById("nav_drop")
-let hack = document.getElementById("hacker")
-current = home
+let hacker_Text_Display = document.getElementById("hacker")
+currentPage = home
 
-if (screen.width > 500)
-  {
-  window.location = "https://james-koduah.github.io/Personal-Portfolio/";
-  }
+// if (screen.width > 450)
+//   {
+//     window.location = "https://james-koduah.github.io/Personal-Portfolio/";
+//   }
 
+
+//Changes which interface is shown : Homepage : About : Projects
 function change_Page(page){
     if (page == "about"){
-        current.style.zIndex = 2
+        currentPage.style.zIndex = 2
         about.style.zIndex = 10
-        current = about
+        currentPage = about
         return;
     }
     if (page == "home"){
-        current.style.zIndex = 2
+        currentPage.style.zIndex = 2
         home.style.zIndex = 10
-        current = home
+        currentPage = home
         return;
     }
     if (page == "projects"){
-        current.style.zIndex = 2
+        currentPage.style.zIndex = 2
         project.style.zIndex = 10
-        current = project
+        currentPage = project
         return;
     }
 }
@@ -40,7 +42,7 @@ function nav_drop(){
         nav.style.zIndex = "19";
         nav_drop_button.style.background = "url(images/side.png)"
         nav_drop_button.style.backgroundSize = "100% 100%"
-        div_clear.style.zIndex = "19"
+        div_clear.style.zIndex = "15"
         b = true 
     }
     else{
@@ -57,7 +59,7 @@ let textIterations = 0;
 let original_word = "SOFTWARE DEVELOPER"
 text_interval = setInterval(()=>{
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    hack.innerText = hack.innerText.split("")
+    hacker_Text_Display.innerText = hacker_Text_Display.innerText.split("")
     .map((letter, index) => {
 
         if (index < textIterations){
@@ -68,5 +70,5 @@ text_interval = setInterval(()=>{
     
     .join("");
 
-    textIterations += 1/10
+    textIterations += 1/4
 },30);
