@@ -1,3 +1,4 @@
+let body = document.getElementById("body")
 let home = document.getElementById("home")
 let about = document.getElementById("about")
 let project = document.getElementById("projects")
@@ -7,10 +8,20 @@ let nav_drop_button = document.getElementById("nav_drop")
 let hacker_Text_Display = document.getElementById("hacker")
 currentPage = home
 
-if (screen.width > 450)
-  {
-    window.location = "https://james-koduah.github.io/Personal-Portfolio/";
-  }
+// if (screen.width > 450)
+//   {
+//     window.location = "https://james-koduah.github.io/Personal-Portfolio/";
+//   }
+if (screen.width > 400){
+    body.innerHTML +=`
+    <div class="middle">
+    <p>Redirecting to webpage for larger screens</p>
+    <div>
+    `
+    setTimeout(()=>{
+        location.assign("https://james-koduah.github.io/Personal-Portfolio/")
+    }, 4000)
+}
 
 
 //Changes which interface is shown : Homepage : About : Projects

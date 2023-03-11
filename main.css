@@ -154,6 +154,21 @@ body{
 
 /* Home page */
 
+.middle{
+  position: fixed;
+  height: 50vh;
+  width: 95vw;
+  top: 25%;
+  z-index: 33;
+  margin: auto;
+  background-color: black;
+  color: rgb(213, 24, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  border: wheat 0.5vw solid;
+}
 
 /* About Section */
   #about{
