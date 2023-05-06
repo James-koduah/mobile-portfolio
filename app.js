@@ -67,7 +67,7 @@ function nav_drop(){
 }
 
 let textIterations = 0;
-let original_word = "SOFTWARE DEVELOPER"
+let original_word = "SOFTWARE ENGINEER"
 text_interval = setInterval(()=>{
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     hacker_Text_Display.innerText = hacker_Text_Display.innerText.split("")
